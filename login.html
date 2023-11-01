@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Log in to POPOY'S</title>
     <!-- add logo to title -->
     <link rel="icon" href="./imagesexp/The POPOYS cafe.png" type="icon">
 
@@ -14,9 +13,7 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
 </head>
-
-<body
-    style="background-image: url(./imagesexp/background-image-contact-us-page.jpg); background-repeat: no-repeat; background-size: cover;">
+<body style="background-image: url(./imagesexp/background-image-Log-in-page.jpg); background-repeat: no-repeat; background-size:cover;">
     <!-- nav bar starts -->
     <nav class="navbar navbar-expand-lg bg-warning fixed-top">
         <div class="container-fluid">
@@ -80,39 +77,31 @@
         </div>
     </nav>
     <!-- nav bar ends -->
-    <!-- Contact form starts -->
-    <form>
-        <div class="container-box w-75  ms-auto me-auto" style="margin-top: 120px;">
-            <div class="mb-3 text text-center">
-                <label for="exampleInputName" class="form-label">Full Name</label>
-                <input type="text" class="form-control w-50 ms-auto me-auto border border-dark border-2 text text-center"
-                    id="exampleInputName" placeholder="enter your name">
+    <!-- Sign up content starts -->
+    <div class="sign-up-box w-25  ms-auto me-auto" style="margin-top: 180px; color: black; font-weight: bold;">
+        <h1 style="text-align: center;">Log In!</h1>
+        <form class="row g-3">
+            <div class="col-12">
+                <label for="inputName" class="form-label">User Name</label>
+                <input type="text" class="form-control border border-warning border-3" id="inputName"
+                    placeholder="your name">
             </div>
-            <div class="mb-3 text text-center">
-                <label for="exampleInputEmail1" class="form-label">Email address</label>
-                <input type="email" class="form-control w-50 ms-auto me-auto border border-dark border-2 text text-center" placeholder="enter your mail address"
-                    id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div class="col-12">
+                <label for="inputPassword" class="form-label">Enter Password</label>
+                <input type="password" class="form-control border border-warning border-3" id="inputPassword"
+                    placeholder="password">
             </div>
-            <div class="mb-3 text text-center">
-                <label for="exampleInputNumber" class="form-label">Contact Number</label>
-                <input type="number" class="form-control w-50 ms-auto me-auto border border-dark border-2 text text-center"
-                    id="exampleInputNumber" placeholder="enter your contact number">
-                    <div id="emailHelp" class="form-text">We'll never share your security credentials with anyone else.</div>
+            <div class="col-12 d-flex justify-content-center align-items-center">
+                <div class="form-check">
+                    <input class="form-check-input border border-warning border-3" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" style="font-style: italic;" for="gridCheck">
+                        keep me logged in.
+                    </label>
+                </div>
+                <a class="btn btn-danger ms-2" href="./index2.html" role="button">Log in</a>
             </div>
-            <div class="mb-3 text text-center">
-                <label for="exampleInputMessage" class="form-label">Message</label>
-                <textarea id="exampleInputMessage" class="form-control w-50 ms-auto me-auto border border-dark border-2 text text-center" rows="2" cols="40" placeholder="What can we do for you?"></textarea>
-            </div>
-            <div class="mb-3 form-check d-flex justify-content-center">
-                <input type="checkbox" class="form-check-input border border-primary border-2 me-1" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Get updates through WhatsApp/Mail</label>
-            </div>
-            <div class="submit-btn d-grid col-2 mx-auto m-3">
-                <button type="submit" class="btn btn-warning">Submit</button>
-            </div>
-        </div>
-    </form>
-    <!-- Contact form ends -->
+        </form>
+    </div>
+    <!-- Sign up content ends -->
 </body>
-
 </html>
